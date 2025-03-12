@@ -89,3 +89,56 @@ a:hover {
     color: #78D96D; /* Slightly darker green for hover effect */
 }
 
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #64A6FF;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    z-index: 1000;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: #253A5E;
+    color: #E0E0E0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project {
+    border: 1px solid #E0E0E0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #1E2A47;
+    color: white;
+}
+
+.project a {
+    display: inline-block;
+    background: #64A6FF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project a:hover {
+    background: #4C8EDB;
+}

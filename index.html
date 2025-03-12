@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <header>
@@ -19,29 +20,55 @@
             </ul>
         </nav>
     </header>
-    
+
     <!-- Home Section -->
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name], a [Your Profession]. Explore my work and connect with me!</p>
+        <p>Hello, my name is Kofi Yeboah. I have 5 years of experience in IT support, system administration, and cybersecurity. I have worked in large user environments, helping people solve computer problems quickly and effectively. My skills include troubleshooting hardware and software issues, managing email systems, and improving security. I am also good at documenting problems and working with teams to make sure everything runs smoothly. I always look for ways to learn new skills and keep up with new technology to provide the best support possible.</p>
     </section>
     
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>[A short introduction about your skills, experience, and education]</p>
+        <h3>Work Experience</h3>
+        <p><strong>Service Desk Specialist – SMDI, Arlington, VA (May 2022 – March 2024)</strong></p>
+        <p>At SMDI, I helped users by answering help desk requests through phone and email. I installed and maintained computers, software, and security systems, making sure everything worked properly. I managed email accounts, user permissions, and mobile devices while also fixing security issues like spam and viruses. I worked with other IT team members to set up new users, troubleshoot technical problems, and improve system performance. I also ran security scans using Tenable Nessus to check for risks and keep systems safe.</p> 
+        
+        <p><strong>Junior System Administrator – Business PC, Laurel, MD (June 2018 – May 2022)</strong></p>
+        <p>In this role, I took care of company workstations and servers, making sure they were running smoothly. I helped solve computer problems, installed and upgraded software, and performed routine maintenance. I also monitored the network using tools like Splunk and SolarWinds to catch and fix problems early. My job included keeping records of system issues, training employees on basic computer use, and working with teams to test and apply changes to IT systems. I also helped with incident response to reduce downtime and keep everything running properly.</p>
+
+        <h3>Education and Certification</h3>
+        <p>I am currently pursuing a Bachelor of Science in Computer Technology at Bowie State University. I completed Cyber Security Training at Immersion Tech in June 2018, where I gained hands-on experience in threat analysis, security incident response, and system protection strategies. Additionally, I hold the CompTIA Security+ certification, validating my expertise in risk management, access control, cryptography, and network security.</p>
+
+        <h3>Technical Skills</h3>
+        <p>My skills include troubleshooting hardware and software issues, managing user accounts, monitoring network performance, and ensuring system security. I have experience with Active Directory, Office 365, email security, and vulnerability scanning using tools like Tenable Nessus. I also work with Splunk and SolarWinds for network monitoring, install and maintain workstations, and assist with mobile device management.</p>
     </section>
     
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Check out some of my work:</p>
-        <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-        </ul>
-    </section>
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>Explore some of my work:</p>
+
+    <div class="project">
+        <h3>AI Research</h3>
+        <p>A research document I conducted for my project on artificial intelligence applications in cybersecurity.</p>
+        <a href="assets/projects/AI-Research.docx" download>Download AI Research (Word)</a>
+    </div>
+
+    <div class="project">
+        <h3>Martin Marietta Materials Analysis</h3>
+        <p>A PowerPoint presentation analyzing Martin Marietta Materials' IT security infrastructure.</p>
+        <a href="assets/projects/Martin-Marietta-Materials.pptx" download>Download Martin Marietta Materials (PowerPoint)</a>
+    </div>
+
+    <div class="project">
+        <h3>NSA Server Automation</h3>
+        <p>A PowerPoint presentation of me explaining NSA’s automation processes for secure server management.</p>
+        <a href="assets/projects/NSA-Server-Automation.pptx" download>Download NSA Server Automation (PowerPoint)</a>
+    </div>
+</section>
+
+
     
     <!-- Resume Section -->
     <section id="resume">
@@ -49,7 +76,6 @@
         <p>Download my resume:</p>
         <a href="assets/resume/my_resume.pdf" download="My_Resume.pdf">Download Resume</a>
     </section>
-    
     
     <!-- Contact Section -->
     <section id="contact">
@@ -67,17 +93,28 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    
-    <!-- Placeholder for Chatbot -->
-    
-    
+
+    <!-- QR Code Section -->
+    <section id="qr-code">
+        <h2>Scan to Visit My GitHub Repository</h2>
+        <img src="assets/images/qr-code.png" alt="QR Code to GitHub" width="200">
+        <p><a href="assets/images/qr-code.png" download="qr-code.png">Download QR Code</a></p>
+    </section>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-toggle">💬</button>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" style="display: none;">
+        <div id="chatbot-header">Chat with Me!</div>
+        <div id="chatbot-messages"></div>
+        <input id="chatbot-input" type="text" placeholder="Ask me anything...">
+        <button id="chatbot-send">Send</button>
+    </div>
+
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 
 </body>
 </html>
 
-<section id="qr-code">
-    <h2>Scan to Visit My Portfolio</h2>
-    <img src="assets/images/qr-code.png" alt="QR Code to Portfolio" width="200">
-    <p><a href="assets/images/qr-code.png" download="MyPortfolioQRCode.png">Download QR Code</a></p>
-</section>
